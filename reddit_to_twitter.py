@@ -65,12 +65,12 @@ def record_id(id):
         f.write(str(id)+ '\n')
 
 
-def already_tweeted(id):
+def already_tweeted(post_id):
     '''reads through our .txt file and determines if tweet has already been posted'''
     found = 0
     with open(posted_reddit_ids, 'r') as f:
         for line in f:
-            if id in line:
+            if post_id in line:
                 found = 1
                 break
     return found
