@@ -6,12 +6,13 @@ Bot that takes reddit posts from subreddit of your choosing and tweets them. The
 
 Things you will need before running the program:
 1. "Client ID" & "Client Secret" from your reddit account. [Instructions](https://github.com/reddit-archive/reddit/wiki/OAuth2)
-2. "Consumer Key","Consumer Secret", "Access Token" & "Access Token Secret" from the twitter account that your bot will be using.[Instructions](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
+2. "Consumer Key","Consumer Secret", "Access Token" & "Access Token Secret" from the twitter account that your bot will be using. [Instructions](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
 
 # Once you get all necessary API keys:
 1. Clone repository.
 2. Download packages Tweepy & Praw.
 '''
+
 pip install tweepy
 pip instal praw
 '''
@@ -21,7 +22,6 @@ pip instal praw
 6. Run the program on any IDE or on the command line.
 '''
 py reddit_to_twitter.py
-
 '''
 
 If you run into any problems please [file an issue](https://github.com/princeali909/reddit-to-twitter-bot/issues).
