@@ -1,14 +1,14 @@
-# reddit-to-twitter-bot
+# Reddit To Twitter Bot
 
 
 Bot that takes reddit posts from subreddit of your choosing and tweets them. The bot also has the option of only selecting specific posts based on keywords of your choosing from your chosen subreddit.
 
 
-Things you will need before running the program:
+## Things you will need:
 1. "Client ID" & "Client Secret" from your reddit account. [Instructions](https://github.com/reddit-archive/reddit/wiki/OAuth2)
 2. "Consumer Key","Consumer Secret", "Access Token" & "Access Token Secret" from the twitter account that your bot will be using. [Instructions](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
 
-# Once you get all necessary API keys:
+# Program Instrcutions:
 1. Clone repository.
 2. Download packages Tweepy & Praw.
 
