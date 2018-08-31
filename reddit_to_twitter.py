@@ -22,12 +22,19 @@ subreddit_to_watch = ''
 posted_reddit_ids = 'example.txt'
 
 #Duration your bot will wait before tweeting again in seconds
-time_between_tweets = 
+time_between_tweets = 30
+
+#Keyword inside reddit title.
+#Bot will only tweet posts with the keywords in this list. Reccomended to enter one keyword at a time.
+#Leave List empty if you want bot to tweet all posts.
+keyword_list = []
+
 
 
 def setup_connection_reddit(subreddit):
     '''Connects to Reddit API'''
     print('[bot] Setting up connection with reddit')
+    #Place reddit API keys here.
     reddit_api = praw.Reddit(user_agent = 'Twitter Bot'.format(subreddit),
                               client_id = '', client_secret = '')
     return reddit_api.subreddit(subreddit)
@@ -43,16 +50,25 @@ def shorten_title(title,character_count):
 
 def tweet_creator(subreddit_info):
     '''Goes through posts on reddit and extracts a shortened link, title & ID'''
-    post_links = [] #list to store our links
-    post_titles = [] #list to store our titles
-    post_ids = [] #list to store our id's
+    post_links = []  # list to store our links
+    post_titles = []  # list to store our titles
+    post_ids = []  # list to store our id's
     print("[bot] extracting posts from sub-reddit")
 
     for submission in subreddit_info.new(limit=5):
         if not already_tweeted(submission.id):
-            post_titles.append(submission.title)
-            post_links.append(submission.shortlink)
-            post_ids.append(submission.id)
+            if not keyword_list:
+                print("No keywords.")
+                post_titles.append(submission.title)
+                post_links.append(submission.shortlink)
+                post_ids.append(submission.id)
+            else:
+                if any(word in submission.title.casefold() for word in keyword_list): #.casefold() to ignore case when comparing the title and keyword
+                    post_titles.append(submission.title)
+                    post_links.append(submission.shortlink)
+                    post_ids.append(submission.id)
+                else:
+                    print("This isn't the post your looking for.")
 
         else:
             print("Already Tweeted")
