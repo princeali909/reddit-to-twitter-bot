@@ -8,7 +8,7 @@ Bot that takes reddit posts from subreddit of your choosing and tweets them. The
 1. "Client ID" & "Client Secret" from your reddit account. [Instructions](https://github.com/reddit-archive/reddit/wiki/OAuth2)
 2. "Consumer Key","Consumer Secret", "Access Token" & "Access Token Secret" from the twitter account that your bot will be using. [Instructions](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
 
-# Program Instrcutions:
+# Program Instructions:
 1. Clone repository.
 2. Download packages Tweepy & Praw.
 
