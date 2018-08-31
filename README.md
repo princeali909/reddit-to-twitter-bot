@@ -9,15 +9,15 @@ Things you will need before running the program:
 2. "Consumer Key","Consumer Secret", "Access Token" & "Access Token Secret" from the twitter account that your bot will be using.[Instructions](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
 
 # Once you get all necessary API keys:
-1.Clone repository.
-2.Download packages Tweepy & Praw.
+1. Clone repository.
+2. Download packages Tweepy & Praw.
 '''
 pip install tweepy
 pip instal praw
 '''
-3.Enter the API keys into there approriate places.
+3. Enter the API keys into there approriate places.
 4. Enter your chosen subreddit.
-5.(Optional) Enter keywords for specific posts you are looking for in the keyword list.
+5. (Optional) Enter keywords for specific posts you are looking for in the keyword list.
 6. Run the program on any IDE or on the command line.
 '''
 py reddit_to_twitter.py
