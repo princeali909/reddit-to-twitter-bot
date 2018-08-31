@@ -12,23 +12,21 @@ Things you will need before running the program:
 1. Clone repository.
 2. Download packages Tweepy & Praw.
 
-'''
+```
 
 pip install tweepy
 pip instal praw
-
-'''
+```
 
 3. Enter the API keys into there approriate places.
 4. Enter your chosen subreddit.
 5. (Optional) Enter keywords for specific posts you are looking for in the keyword list.
 6. Run the program on any IDE or on the command line.
 
-'''
+```
 
 py reddit_to_twitter.py
-
-'''
+```
 
 If you run into any problems please [file an issue](https://github.com/princeali909/reddit-to-twitter-bot/issues).
 
