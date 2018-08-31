@@ -13,7 +13,6 @@ Bot that takes reddit posts from subreddit of your choosing and tweets them. The
 2. Download packages Tweepy & Praw.
 
 ```
-
 pip install tweepy
 pip instal praw
 ```
@@ -24,7 +23,6 @@ pip instal praw
 6. Run the program on any IDE or on the command line.
 
 ```
-
 py reddit_to_twitter.py
 ```
 
