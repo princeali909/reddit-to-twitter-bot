@@ -16,6 +16,7 @@ Things you will need before running the program:
 
 pip install tweepy
 pip instal praw
+
 '''
 
 3. Enter the API keys into there approriate places.
@@ -24,7 +25,9 @@ pip instal praw
 6. Run the program on any IDE or on the command line.
 
 '''
+
 py reddit_to_twitter.py
+
 '''
 
 If you run into any problems please [file an issue](https://github.com/princeali909/reddit-to-twitter-bot/issues).
